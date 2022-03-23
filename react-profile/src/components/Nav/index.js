@@ -8,8 +8,9 @@ function Nav() {
         { name: "Resume", description: "and This is where I keep my resume! (IF I HAD ONE!)"}
     ];
 
-    const categorySelected = () => {
-        console.log("click handled");
+    const categorySelected = (item) => {
+        console.log(item);
+        return item;
     };
 
     return (
@@ -25,10 +26,11 @@ function Nav() {
                 <ul className="flex-row">
 
                 <li className="mx-2">
-                    <a data-testid="about" href="#about" onClick={() => categorySelected()}>
+                    <a data-testid="about" href="#about" onClick={() => categorySelected('About me')}>
                     About me
                     </a>
                 </li>
+
                 <li className={"mx-2"}>
                     <span onClick={() => categorySelected('Contact')}>
                     Contact
@@ -37,7 +39,7 @@ function Nav() {
 
                 {categories.map((category) => (
                     <li className="mx-1" key={category.name}>
-                        <span onClick={categorySelected}>
+                        <span onClick={() => categorySelected(category.name)}>
                             {category.name}
                         </span>
                     </li>
