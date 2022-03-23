@@ -9,8 +9,6 @@ exports[`About component matches snapshot DOM node structure 1`] = `
       id="about"
     >
       Hello, my name is Matthew Wilson.
-      <br />
-      I am currently attending UTSA's coding boot camp.
     </h1>
     <img
       alt="cover"
@@ -18,6 +16,13 @@ exports[`About component matches snapshot DOM node structure 1`] = `
       src="remi-delmotte-hueco-mundo.jpg"
       style="width: 100%;"
     />
+    <div
+      class="my-2"
+    >
+      <p>
+        I am currently a student going through UTSA coding boot camp.
+      </p>
+    </div>
   </section>
 </DocumentFragment>
 `;

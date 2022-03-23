@@ -9,14 +9,14 @@ function Nav() {
     ];
 
     const categorySelected = () => {
-        console.log("click handled")
-    }
+        console.log("click handled");
+    };
 
     return (
-        <header data-testid="header" className="flex-row px-1">
+        <header className="flex-row px-1">
             <h2>
-                <a href="/">
-                <span role="img" aria-label="camera"> 📸</span> Mattrick127's Login Page!
+                <a data-testid="link" href="/">
+                <span role="img" aria-label="camera"> 📸</span> Mattrick127s Page
                 </a>
             </h2>
 
@@ -25,9 +25,14 @@ function Nav() {
                 <ul className="flex-row">
 
                 <li className="mx-2">
-                    <a href="#about" onClick={() => categorySelected()}>
+                    <a data-testid="about" href="#about" onClick={() => categorySelected()}>
                     About me
                     </a>
+                </li>
+                <li className={"mx-2"}>
+                    <span onClick={() => categorySelected('Contact')}>
+                    Contact
+                    </span>
                 </li>
 
                 {categories.map((category) => (
