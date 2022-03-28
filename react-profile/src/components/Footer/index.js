@@ -2,9 +2,9 @@ import React from "react";
 
 function Footer() {
     return (
-        <div>
-            Yo yo yo!
-        </div>
+        <footer>
+            YO YO YO!
+        </footer>
     )
 }
 

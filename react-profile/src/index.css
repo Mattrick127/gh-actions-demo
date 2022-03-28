@@ -290,3 +290,13 @@ a {
 .navActive {
   color: var(--secondary);
 }
+
+/*  Added footer semantic.  */
+footer {
+  padding: 30px;
+  clear: both;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background-color: black;
+}
