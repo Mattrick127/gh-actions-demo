@@ -120,10 +120,6 @@ button[disabled] {
   opacity: .8;
 }
 
-img {
-  max-width: 100%;
-}
-
 span[role="img"] {
   cursor: default;
 }
@@ -208,6 +204,7 @@ textarea {
 .my-5 {
   margin-top: var(--spacing-five);
   margin-bottom: var(--spacing-five);
+  background-image: url(../src/assets/cover/remi-delmotte-hueco-mundo.jpg);
 }
 
 .px-1 {
