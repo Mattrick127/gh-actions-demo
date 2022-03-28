@@ -7,9 +7,7 @@ import { useState } from 'react';
 
 function App() {
   const [categories] = useState([
-    { name: "About", description :"A description of myself and my expertise I've learned in the past year.",},
     { name: "Portfolio", description :"This is a portfolio of my works!",},
-    { name: "Contact", description: "This is a page where you can contact me on the daily."},
     { name: "Resume", description: "and This is where I keep my resume! (IF I HAD ONE!)"}
   ]);
 

@@ -38,6 +38,7 @@ body {
   color: var(--light);
   font-family: 'Poiret One', cursive;
 
+  background-image: url(../src/assets/cover/remi-delmotte-hueco-mundo.jpg);
 }
 
 h1,
@@ -204,7 +205,6 @@ textarea {
 .my-5 {
   margin-top: var(--spacing-five);
   margin-bottom: var(--spacing-five);
-  background-image: url(../src/assets/cover/remi-delmotte-hueco-mundo.jpg);
 }
 
 .px-1 {
