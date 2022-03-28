@@ -10,12 +10,6 @@ exports[`About component matches snapshot DOM node structure 1`] = `
     >
       Hello, my name is Matthew Wilson.
     </h1>
-    <img
-      alt="cover"
-      class="my-2"
-      src="remi-delmotte-hueco-mundo.jpg"
-      style="width: 100%;"
-    />
     <div
       class="my-2"
     >

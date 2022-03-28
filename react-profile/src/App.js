@@ -1,5 +1,6 @@
 import './App.css';
 import About from './components/About';
+import ContactForm from './components/Contact';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import { useState } from 'react';
@@ -27,7 +28,13 @@ function App() {
         setContactSelected={setContactSelected}        
         ></Nav>
       <main>
-        <About></About>
+        {!contactSelected ? (
+          <>
+            <About currentCategory={currentCategory}></About>
+          </>
+        ) : (
+          <ContactForm></ContactForm>
+        )}
       </main>
         <Footer></Footer>
     </div>
