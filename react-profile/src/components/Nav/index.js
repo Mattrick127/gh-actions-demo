@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
     const {
@@ -10,7 +11,7 @@ function Nav(props) {
     } = props;
 
     useEffect(() => {
-      document.title = (currentCategory.name);
+      document.title = capitalizeFirstLetter(currentCategory.name);
     }, [currentCategory]);
   
     return (
@@ -48,6 +49,7 @@ function Nav(props) {
                     setContactSelected(false);
                   }}
                 >
+                {capitalizeFirstLetter(category.name)}
                 </span>
               </li>
             ))}
