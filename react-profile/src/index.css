@@ -293,10 +293,18 @@ a {
 
 /*  Added footer semantic.  */
 footer {
+  bottom: 0%;
   padding: 30px;
   clear: both;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
   text-align: center;
   background-color: black;
+}
+
+Footer {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 10%;
 }
