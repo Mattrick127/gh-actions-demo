@@ -3,6 +3,8 @@ import About from './components/About';
 import ContactForm from './components/Contact';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
+import Resume from './components/Resume';
+import Portfolio from './components/Portfolio';
 import { useState } from 'react';
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
         {!contactSelected ? (
           <>
             <About currentCategory={currentCategory}></About>
+            <Resume></Resume>
+            <Portfolio></Portfolio>
           </>
         ) : (
           <ContactForm></ContactForm>

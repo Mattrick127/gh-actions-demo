@@ -39,6 +39,7 @@ body {
   font-family: 'Poiret One', cursive;
 
   background-image: url(../src/assets/cover/remi-delmotte-hueco-mundo.jpg);
+  background-repeat: no-repeat;
 }
 
 h1,
