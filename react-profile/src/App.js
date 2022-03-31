@@ -5,7 +5,7 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 function App() {
   const [categories] = useState([
@@ -17,6 +17,8 @@ function App() {
 
   const [contactSelected, setContactSelected] = useState(false);
 
+  const [currentPageSelected, setCurrentPageSelected] = useState("about");
+
 
   return (
     <div>
@@ -25,10 +27,16 @@ function App() {
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
         contactSelected={contactSelected}
-        setContactSelected={setContactSelected}        
+        setContactSelected={setContactSelected}
+        setCurrentPageSelected={setCurrentPageSelected}        
         ></Nav>
       <main>
-        {!contactSelected ? (
+        {currentPageSelected}
+        {currentPageSelected === "about" ? <About> </About> : null }
+        {currentPageSelected === "contact" ? <ContactForm> </ContactForm> : null }
+        {currentPageSelected === "resume" ? <Resume> </Resume> : null }
+        {currentPageSelected === "portfolio" ? <Portfolio> </Portfolio> : null }
+        {/* {!contactSelected ? (
           <>
             <About currentCategory={currentCategory}></About>
             <Resume></Resume>
@@ -36,7 +44,7 @@ function App() {
           </>
         ) : (
           <ContactForm></ContactForm>
-        )}
+        )} */}
       </main>
       <footer>
       <Footer></Footer>
